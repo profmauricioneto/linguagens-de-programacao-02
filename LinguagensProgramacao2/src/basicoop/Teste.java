@@ -33,5 +33,14 @@ public class Teste {
         System.out.println("Cor: "+ carroJoao.cor);
         carroJoao.acelerar();
         carroJoao.frear();
+
+// ---------------------------------------------
+
+    Pessoa mauricio = new Pessoa("Mauricio Moreira Neto", 1.6, 1990);
+//    mauricio.altura = 1.6;
+//    mauricio.ano_nascimento = 1990;
+//    mauricio.nome = "Mauricio Moreira Neto";
+    mauricio.imprimirDados();
+        System.out.println("A sua idade é: " + mauricio.calcularIdade());
     }
 }
