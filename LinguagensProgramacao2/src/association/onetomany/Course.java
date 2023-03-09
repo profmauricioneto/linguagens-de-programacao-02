@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package association.onetoone;
+package association.onetomany;
 
 /**
  *
@@ -23,11 +23,8 @@ public class Course {
         return this.courseName;
     }
     
-    public void setProfessor(Professor professor) {
-        this.professor = professor;
+    public int getIdCourse() {
+        return courseId;
     }
-    
-    public String getProfessorName() {
-        return professor.professorName;
-    }
+
 }
