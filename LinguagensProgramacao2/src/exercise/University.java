@@ -49,5 +49,12 @@ public class University {
             numberOfStudents += c.students.size();
         }
         return numberOfStudents;
-    }    
+    }
+    
+    public void getAllStudents() {
+        for(Course c: courses) {
+            System.out.println(c.getNameCourse());
+            c.getCourseStudents(); 
+        }
+    }
 }

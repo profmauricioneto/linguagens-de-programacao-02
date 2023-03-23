@@ -37,5 +37,7 @@ public class TestExercise {
         unichristus.getNameCourses();
         
         System.out.println("Total de alunos: " + unichristus.getTotalStudents());
+        
+        unichristus.getAllStudents();
     }
 }
