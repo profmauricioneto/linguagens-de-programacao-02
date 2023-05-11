@@ -34,6 +34,8 @@ public class Teste {
         carroJoao.acelerar();
         carroJoao.frear();
 
+        
+        Math.exp(2);
 // ---------------------------------------------
 
     Pessoa mauricio = new Pessoa("Mauricio Moreira Neto", 1.6, 1990);
