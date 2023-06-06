@@ -11,6 +11,12 @@ package designpatterns.Composite.UniversityDepartments;
 public class University {
     public static void main(String[] args) {
         SalesDepartment sales = new SalesDepartment(1, "Equipe de Vendas!");
+        SalesInnerDepartment sid = new SalesInnerDepartment();
+        SalesOuterDepartment sod = new SalesOuterDepartment();
+        sales.addSalesDepartment(sod);
+        sales.addSalesDepartment(sid);
+        
+        
         FinancialDepartment financial = new FinancialDepartment(2, "Equipe Financeira");
         HumanResourceDepartment rh = new HumanResourceDepartment(4, "Equipe RH");
         

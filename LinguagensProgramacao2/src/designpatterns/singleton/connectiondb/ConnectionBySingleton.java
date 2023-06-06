@@ -35,8 +35,8 @@ public class ConnectionBySingleton {
             String username = input.next();
             char[] password_console = console.readPassword("Password: ");
             
-            setUsername(username);
-            setPassword(new String(password_console));
+            this.setUsername(username);
+            this.setPassword(new String(password_console));
             Class.forName("com.mysql.cj.jdbc.Driver");
             this.connection = DriverManager.getConnection(url, getUsername(), getPassword());
         } catch (ClassNotFoundException e) {

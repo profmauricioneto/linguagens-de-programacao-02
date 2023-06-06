@@ -32,8 +32,12 @@ public class ExampleTemplateMethod {
         
         if (socialNet.equals("facebook")) {
             network = new FacebookNetwork(username, password);
-        } else {
+        } else if(socialNet.equals("twitter")) {
             network = new TwitterNetwork(username, password);
+        } else if (socialNet.equals("instagram")) {
+            network = new InstagramNetwork(username, password);
+        } else {
+            System.out.println("Rede Social não identificada");        
         }
         network.postData(message);
     } 
