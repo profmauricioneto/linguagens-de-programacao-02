@@ -18,5 +18,5 @@ CREATE TABLE usuarios (
 
 CREATE PROCEDURE SelectAllData ()
 BEGIN
-	SELECT * FROM usuarios;
+    SELECT * FROM usuarios;
 END

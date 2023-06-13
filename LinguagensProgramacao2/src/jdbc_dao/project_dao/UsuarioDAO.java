@@ -18,7 +18,7 @@ import java.sql.ResultSet;
  */
 public class UsuarioDAO {
 
-    private Connection connection;
+    private final Connection connection;
 
     /**
      * constructor
@@ -139,6 +139,9 @@ public class UsuarioDAO {
         }
     }
 
+    /**
+     * @param long id
+     */
     public void mostrarPorId(long id) {
         String sql = "SELECT * FROM usuarios WHERE id = ?";
         try {
